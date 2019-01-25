@@ -1,80 +1,65 @@
-<!doctype html>
-<html lang="en">
- <head>
-  <title>Document</title>
+<html>
+<title>shop</title>
+<head>
+
+    <style>
+  table, th, td {
+ border: 1px solid black;
+ border-collapse: collapse;
+}
+th, td {
+ padding: 10px;
+}
+th {
+ text-align: left;
+}
+ </style>
  </head>
  <body>
- <style type="text/css">
- h4{margin-left:200px;margin-top:150px}
- h5{margin-left:120px}
-    #uniq{margin-left:120px}
-	table,td{border:solid 1px;border-collapse:collapse}
- </style>
- <h4>Product Details</h4>
-  <table id="uniq">	
-  <tr>
-	<td>Product</td>
-	<td>Unit Price</td>
-	<td>Qty</td>
-  </tr>
-  <tr>
-	<td>USB Pendrive</td>
-	<td>300</td>
-	<td><input type="text" name=""></td>
-  </tr>
-  <tr>
-	<td>Wireless Mouse</td>
-	<td>200</td>
-	<td><input type="text" name=""></td>
-  </tr>
-  <tr>
-	<td>Keyboard</td>
-	<td>400</td>
-	<td><input type="text" name=""></td>
-  </tr>
-  <tr>
-	<td>Laptop</td>
-	<td>33000</td>
-	<td><input type="text" name=""></td>
-  </tr>
-  </table>
-  <h5>Please Fill he following details also</h5>
-  <table>
-  <tr>
-	<td>Name</td>
-	<td>:</td>
-	<td><input type="text" name=""></td>
-  </tr>
-  <tr>
-	<td>Gender</td>
-	<td>:</td>
-	<td><input type="radio" name="m" value="male">Male
-	    <input type="radio" name="m" value="female">Female
-	</td>
-  </tr>
-  <tr>
-	<td>Address</td>
-	<td>:</td>
-	<td><textarea name="" rows="" cols=""></textarea></td>
-  </tr>
-  <tr>
-	<td>Phonenum</td>
-	<td>:</td>
-	<td><input type="text" name=""></td>
-  </tr>
-   <tr>
-	<td>Payment Option</td>
-	<td>:</td>
-	<td><input type="radio" name="cod">Cash on delivery<br>
-	    <input type="radio" name="ib">Internet banking<br>
-		<input type="radio" name="cd">Credit/Debit<br>
-	</td>
-  </tr>
-  <tr>
-	<td></td>
-	<td></td>
-	<td><input type="submit" value="submit"></td>
-  </tr>
-  </table>
- </body>
+     <form action="cart.php" method="post">
+     Name:<input type="text" name="uname"/><br>
+     Gender:<br>
+     <input type="radio" name="gender" value="m"/>male<br>
+     <input type="radio" name="gender" value="f"/>female<br>
+     Address:<textarea cols="40" rows="5" name="addrs"></textarea><br>
+   Phone no:<input type="text" name="pno"/><br>
+   Payment Option:<br>
+       <input type="radio" name="payment" value="cod"/>CashOnDelivery<br>
+       <input type="radio" name="payment" value="ib"/>InternetBanking<br>
+       <input type="radio" name="payment" value="cre"/>Credit<br>
+       <input type="radio" name="payment" value="deb"/>debit<br>
+
+     </form>
+   <table>
+<caption>product details</caption>
+<thead>
+<tr>
+   <th>product</th>
+   <th>unit price</th>
+   <th>Qty</th>
+</tr>
+</thead>
+<tr>
+   <td>usb pendrive</td>
+   <td>300</td>
+   <td><input type="text"></td>
+</tr>
+<tr>
+   <td>wireless mouse</td>
+   <td>200</td>
+   <td><input type="text"></td>
+</tr>
+<tr>
+   <td>keyboard</td>
+   <td>400</td>
+   <td><input type="text"></td>
+</tr>
+<tr>
+   <td>laptop</td>
+   <td>33000</td>
+   <td><input type="text"></td>
+</tr>
+</table>
+<input type="submit"/>
+</body>
 </html>
